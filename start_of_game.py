@@ -1,7 +1,7 @@
-import random
+
 
 def start_of_tic_tac_toe_game():
-    
+    import random
     mark = input('Вы будете играть крестиками (X) или ноликами (O)? ')
     mark = mark.upper()
     
@@ -15,5 +15,5 @@ def start_of_tic_tac_toe_game():
         mark = ['X', 'O']       # если хотим быстрее началь играть :)
         mark = random.choice(mark)
         print(f'Вы ввели не то, поэтому выбор сделан за вас. Вы играете: {mark}')
-
-        start_of_tic_tac_toe_game()
+        return mark
+    #start_of_tic_tac_toe_game()
