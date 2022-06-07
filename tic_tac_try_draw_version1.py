@@ -3,7 +3,7 @@
 игровое поле и результаты ходов игроков.
 '''
 
-temp_list = [" ", " ", " ", " ", " ", " ", " ", " ", " "]
+temp_list = [["X", "O", "O"], ["O", "X", "X"], ["X", "O", "X"]]
 
 def tic_tac_try_draw(arg_list):
     '''
@@ -18,17 +18,17 @@ def tic_tac_try_draw(arg_list):
           " {3} | {4} | {5}            4 | 5 | 6 \n"
           "===========          ===========\n"
           " {6} | {7} | {8}            7 | 8 | 9 \n".format(
-              temp_list[0],
-              temp_list[1],
-              temp_list[2],
-              temp_list[3],
-              temp_list[4],
-              temp_list[5],
-              temp_list[6],
-              temp_list[7],
-              temp_list[8]
+              temp_list[0][0],
+              temp_list[0][1],
+              temp_list[0][2],
+              temp_list[1][0],
+              temp_list[1][1],
+              temp_list[1][2],
+              temp_list[2][0],
+              temp_list[2][1],
+              temp_list[2][2]
           )
           )
-    print("\nВведите номер ячейки куда поставить (x или 0)\n")
+    print("\nВведите номер ячейки куда поставить (X или O)\n")
 
 tic_tac_try_draw(temp_list)
