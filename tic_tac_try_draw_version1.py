@@ -9,9 +9,8 @@ def tic_tac_try_draw(arg_list):
     '''
     Эта функция рисует игровое поле и изменения внесёные игроком
     '''
-    print("\n          TicTacTry")
-    print()
-    print("Ходит икрок          Номера ячеек")
+#     print()
+#     print("Ходит игрок {}        Номера ячеек")
     print()
     print(" {0} | {1} | {2}            1 | 2 | 3 \n"
           "===========          ===========\n"
@@ -29,6 +28,5 @@ def tic_tac_try_draw(arg_list):
               temp_list[2][2]
           )
           )
-    print("\nВведите номер ячейки куда поставить (X или O)\n")
 
 tic_tac_try_draw(temp_list)
