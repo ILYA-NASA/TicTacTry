@@ -1,7 +1,8 @@
-from writemove import WriteMove
+
 # import main (или controller например) 
 
-def user_input(player_mark):
+def user_input(field,player_mark):
+    from writemove import WriteMove
     while True:
         player_choice = input(f'Введите номер ячейки, чтобы поставить {player_mark}: ')
         try:
@@ -10,7 +11,7 @@ def user_input(player_mark):
             print('Нужно ввести номер цифрой!')
             continue
         if player_choice >= 1 and player_choice <= 9:
-            players_move = WriteMove(player_choice, player_mark)
+            players_move = WriteMove(player_choice, player_mark,field)
             if players_move:
                 break   # тут похоже нужно уходить на main и проверять было ли 5 ходов, если не было то менять mark и вызывать user_input, 
                         # если было то проверять победу, если не победа то возвращать на main и тоже менять mark и вызывать user_input

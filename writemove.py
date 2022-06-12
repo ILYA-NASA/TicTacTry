@@ -1,6 +1,6 @@
 
 
-def WriteMove(num :int, mark :str):
+def WriteMove(num :int, mark :str, list_game : list):
     match num:
         case 1:
             if list_game[0][0] != ' ': return  False

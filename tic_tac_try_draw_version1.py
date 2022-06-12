@@ -3,7 +3,7 @@
 игровое поле и результаты ходов игроков.
 '''
 
-temp_list = [["X", "O", "O"], ["O", "X", "X"], ["X", "O", "X"]]
+# temp_list = [["X", "O", "O"], ["O", "X", "X"], ["X", "O", "X"]]
 
 def tic_tac_try_draw(arg_list):
     '''
@@ -29,4 +29,4 @@ def tic_tac_try_draw(arg_list):
           )
           )
 
-tic_tac_try_draw(temp_list)
+# tic_tac_try_draw(temp_list)
