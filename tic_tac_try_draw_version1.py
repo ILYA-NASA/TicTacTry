@@ -17,15 +17,15 @@ def tic_tac_try_draw(arg_list):
           " {3} | {4} | {5}            4 | 5 | 6 \n"
           "===========          ===========\n"
           " {6} | {7} | {8}            7 | 8 | 9 \n".format(
-              temp_list[0][0],
-              temp_list[0][1],
-              temp_list[0][2],
-              temp_list[1][0],
-              temp_list[1][1],
-              temp_list[1][2],
-              temp_list[2][0],
-              temp_list[2][1],
-              temp_list[2][2]
+              arg_list[0][0],
+              arg_list[0][1],
+              arg_list[0][2],
+              arg_list[1][0],
+              arg_list[1][1],
+              arg_list[1][2],
+              arg_list[2][0],
+              arg_list[2][1],
+              arg_list[2][2]
           )
           )
 
