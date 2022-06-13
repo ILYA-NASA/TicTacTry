@@ -29,4 +29,5 @@ def tic_tac_try_draw(arg_list):
           )
           )
 
-tic_tac_try_draw(temp_list)
+if __name__ == '__main__':
+    tic_tac_try_draw(temp_list)
